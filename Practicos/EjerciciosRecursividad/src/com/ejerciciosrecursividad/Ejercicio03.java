@@ -25,19 +25,27 @@ public class Ejercicio03 {
         findHighest(a,a.length-1,Integer.MIN_VALUE);
     }
 
-    public static void findHighest(int[] a, int position, int mayor){
-        if (position == 0){
-            if (a[position] > mayor){
-                System.out.println(a[position]);
+    /**
+     * Busca el mayor numero entero en un arreglo de enteros que se
+     * pasa como parámetro.
+     * @param a Un arreglo de numeros enteros.
+     * @param n la longitud del arreglo.
+     * @param mayor un valor de referencia para realizar las comparaciones en la búsqueda.
+     * @return void
+     * */
+    public static void findHighest(int[] a, int n, int mayor){
+        if (n == 0){
+            if (a[n] > mayor){
+                System.out.println(a[n]);
             } else {
                 System.out.println(mayor);
             }
         } else {
-            if(a[position] > mayor){
-                mayor = a[position];
-                findHighest(a,position-1,mayor);
+            if(a[n] > mayor){
+                mayor = a[n];
+                findHighest(a,n-1,mayor);
             } else {
-                findHighest(a,position-1,mayor);
+                findHighest(a,n-1,mayor);
             }
         }
     }
