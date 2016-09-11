@@ -10,7 +10,21 @@ package com.ejerciciosrecursividad;
  * @version 030916
  */
 public class Ejercicio04 {
-    public static void main(String [] args){
-        System.out.println("Ejercicio04");
+    public static void main(String[] args) {
+        System.out.println(fibonacci(0));
+        System.out.println(fibonacci(1));
+        System.out.println(fibonacci(2));
+        System.out.println(fibonacci(3));
+        System.out.println(fibonacci(4));
+        System.out.println(fibonacci(5));
+        System.out.println(fibonacci(6));
+    }
+
+    public static int fibonacci(int n){
+        if (n < 2){
+            return n;
+        } else {
+            return fibonacci(n-2)+fibonacci(n-1);
+        }
     }
 }
