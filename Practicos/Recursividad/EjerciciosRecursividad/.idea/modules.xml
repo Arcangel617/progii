@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$USER_HOME$/Documentos/github-utn/progii/Practicos/Recursividad/EjerciciosRecursividad/EjerciciosRecursividad.iml" filepath="$USER_HOME$/Documentos/github-utn/progii/Practicos/Recursividad/EjerciciosRecursividad/EjerciciosRecursividad.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EjerciciosRecursividad.iml" filepath="$PROJECT_DIR$/EjerciciosRecursividad.iml" />
     </modules>
   </component>
 </project>

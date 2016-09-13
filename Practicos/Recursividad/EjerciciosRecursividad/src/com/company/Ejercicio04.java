@@ -1,4 +1,4 @@
-package com.ejerciciosrecursividad;
+package com.company;
 
 /**
  * The fibonacci sequence is a famous bit of mathematics, and it happens to have a recursive definition.

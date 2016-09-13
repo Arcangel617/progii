@@ -1,4 +1,4 @@
-package com.ejerciciosrecursividad;
+package com.company;
 
 /**
  * Realizar un procedimiento que imprima de manera recursiva la tabla del 9.
