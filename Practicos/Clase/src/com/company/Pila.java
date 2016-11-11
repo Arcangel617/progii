@@ -1,7 +1,13 @@
+package com.company;
+
+/**
+ * This class is not finished.
+ * @Author Artigue Arcangel Andres
+ * */
 public class Pila{
-	private int arr[] = null;
-	private int size = null;
-	private int actualSize = null;
+	private int arr[];
+	private int size;
+	private int actualSize;
 
 	public Pila(int size){
 		this.arr = new int[size];
