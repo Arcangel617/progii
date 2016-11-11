@@ -22,14 +22,29 @@ public class Main {
 
         nodo3.der = nodo6;
 
-        preorden(nodo1);
+        amplitud(nodo1);
     }
 
-    public static void preorden(NodoABinario nab){
+    public static void amplitud(NodoABinario nab){
+
+        Cola cola, colaAux;
+        NodoABinario aux;
+
         if (nab != null){
-            System.out.print(nab.toString()+" ");
-            preorden(nab.izq);
-            preorden(nab.der);
+            cola = new Cola();
+            colaAux = new Cola();
+            cola.encolar(nab); // este es el nodo raiz
+
+            while (!cola.vacia()){
+                colaAux.encolar(aux=cola.desencolar());
+                if (aux.izq != null){
+                    cola.encolar(aux.izq);
+                }
+                if (aux.der != null){
+                    cola.encolar(aux.der);
+                }
+            }
+            colaAux.imprimir();
         }
     }
 }
