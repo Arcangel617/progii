@@ -31,7 +31,21 @@ public class Ejercicio01 {
             monedas[i] = s.nextInt();
         }
 
+        for (int m : monedas
+                ) {
+            System.out.print(m + " ");
+
+        }
+        System.out.println();
+
         monedas = ordenar(monedas);
+
+        for (int m : monedas
+                ) {
+            System.out.print(m + " ");
+
+        }
+        System.out.println();
 
         System.out.print("Monto a pagar: ");
         int monto = s.nextInt();
@@ -49,12 +63,15 @@ public class Ejercicio01 {
     }
 
     public static int[] ordenar(int[] a){
-        int aux;
-        for (int i = 0; i < a.length - 1; i++) {
-            if (a[i+1] > a[i]){
-                aux = a[i];
-                a[i] = a[i+1];
-                a[i+1] = aux;
+        int buffer;
+        int i,j;
+        for (i = 0; i < a.length; i++){
+            for (j = 0; j < i; j++){
+                if (a[i] > a[j]){
+                    buffer = a[j];
+                    a[j] = a[i];
+                    a[i] = buffer;
+                }
             }
         }
         return a;
